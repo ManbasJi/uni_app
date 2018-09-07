@@ -1,0 +1,14 @@
+<template name="8e8ac822">
+  <view class="_view data-v-cb6c7daa">
+    <block wx:key="index" key="{{index}}" wx:for="{{orderList}}" wx:for-index="index" wx:for-item="item">
+      <view class="_view data-v-cb6c7daa">
+        <view class="_view data-v-cb6c7daa status">状态：已取消</view>
+        <view class="_view data-v-cb6c7daa name">姓名：{{item.fCustName}}</view>
+        <view class="_view data-v-cb6c7daa phone">手机号：{{item.fPhone}}</view>
+        <view class="_view data-v-cb6c7daa date">申请日期：{{item.fDate}}</view>
+        <view class="_view data-v-cb6c7daa time">预约时间：{{item.fDateTime}}</view>
+        <view class="_view data-v-cb6c7daa num">人数:{{item.fPeopleNum}}</view>
+      </view>
+    </block>
+  </view>
+</template>

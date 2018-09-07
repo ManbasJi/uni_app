@@ -1,0 +1,12 @@
+<template name="f8a57eea">
+  <view class="_view data-v-76288207 index">
+    <view class="_view data-v-76288207 tags">
+      <bclok wx:key="index" key="{{index}}" wx:for="{{data}}" wx:for-index="index" wx:for-item="value" class="_bclok data-v-76288207">
+        <view class="_view data-v-76288207 tag" bindtap="handleProxy" data-eventid="{{'0-'+index}}" data-comkey="{{$k}}">
+          <image class="_image data-v-76288207 tag-img" src="{{value.icon}}"></image>
+          <text class="_text data-v-76288207 tag-text">{{value.type}}</text>
+        </view>
+      </bclok>
+    </view>
+  </view>
+</template>

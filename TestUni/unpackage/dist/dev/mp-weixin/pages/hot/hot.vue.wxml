@@ -1,0 +1,21 @@
+<template name="0a42f571">
+  <view class="_view data-v-06839226 index">
+    <block wx:key="index" key="{{index}}" wx:for="{{lists}}" wx:for-index="index" wx:for-item="list">
+      <view class="_div data-v-06839226 row">
+        <view class="_div data-v-06839226 card card-list2" bindtap="handleProxy" wx:key="key" key="{{key}}" data-eventid="{{'1-'+index+'-'+key}}" data-comkey="{{$k}}" wx:for="{{list}}" wx:for-index="key" wx:for-item="item">
+          <image class="_image data-v-06839226 card-img card-list2-img" src="{{item.img_src}}"></image>
+          <view class="_div data-v-06839226 card-num-view card-list2-num-view">
+            <text class="_text data-v-06839226 card-num card-list2-num">{{item.img_num}}P</text>
+          </view>
+          <view class="_div data-v-06839226 card-bottm row">
+            <view class="_div data-v-06839226 car-title-view row">
+              <text class="_text data-v-06839226 card-title card-list2-title">{{item.title}}</text>
+            </view>
+            <view catchtap="handleProxy" class="_view data-v-06839226 card-share-view" data-eventid="{{'0-'+index+'-'+key}}" data-comkey="{{$k}}"></view>
+          </view>
+        </view>
+      </view>
+    </block>
+    <text class="_text data-v-06839226 loadMore">加载中...</text>
+  </view>
+</template>
